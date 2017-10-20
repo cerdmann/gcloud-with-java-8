@@ -8,4 +8,4 @@ RUN echo "deb http://http.debian.net/debian jessie-backports main" | tee --appen
     && apt-get install -t jessie-backports openjdk-8-jdk -y \
     && update-java-alternatives -s java-1.8.0-openjdk-amd64
 
-
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
